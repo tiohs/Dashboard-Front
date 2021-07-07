@@ -1,29 +1,33 @@
 import React from 'react';
-import { Conteiner } from './style';
+
+import { FaSearch, FaUser } from 'react-icons/fa';
 
 function Header() {
   return (
-    <Conteiner>
-      <header>
-        <h2 className="header-title">
-          <label for="nav-toogle">
-            <span className="fas fa-bars"></span>
-          </label>
-          Dashboard
-        </h2>
-        <div className="search-wrapper">
-          <span className="fas fa-search"></span>
-          <input type="search" placeholder="Pesquisar" />
+    <header>
+      <h2 className="header-title">
+        <label for="nav-toogle">
+          <span className="fas fa-bars"></span>
+        </label>
+        Dashboard
+      </h2>
+      <div className="search-wrapper">
+        <span>
+          <FaSearch />
+        </span>
+
+        <input type="search" placeholder="Pesquisar" />
+      </div>
+      <div className="user-wrapper">
+        <span>
+          <FaUser size={16} />
+        </span>
+        <div>
+          <h4>Simon Joseph</h4>
+          <small>Cliente</small>
         </div>
-        <div className="user-wrapper">
-          <img src="img/user.png" height="40px" width="40px" alt="Usuário" />
-          <div>
-            <h4>Simon Joseph</h4>
-            <small>Cliente</small>
-          </div>
-        </div>
-      </header>
-    </Conteiner>
+      </div>
+    </header>
   );
 }
 
