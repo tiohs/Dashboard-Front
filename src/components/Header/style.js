@@ -14,5 +14,13 @@ export const Container = styled.div`
     z-index: 100;
     transition: left 300ms;
     align-items: center;
+    .headerTitle {
+      display: flex;
+      align-items: center;
+      h1 {
+        font-family: 'Roboto' sans-serif;
+        margin-left: 10px;
+      }
+    }
   }
 `;
