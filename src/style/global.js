@@ -1,6 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+  :root {
+    --principal-color: #2570ff;
+    --banner-font-color: #fff;
+    --main-color: #2570ff;
+    --color-dark: #1d2231;
+    --text-grey: #8390a2;
+  }
   * {
     margin: 0;
     padding: 0;
