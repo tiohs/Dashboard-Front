@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import search from '../../assets/img/search.svg';
 export const Container = styled.div`
   header {
     background: #fff;
@@ -20,6 +20,21 @@ export const Container = styled.div`
       h1 {
         font-family: 'Roboto' sans-serif;
         margin-left: 10px;
+      }
+    }
+    .search {
+      display: flex;
+      justify-content: center;
+      input {
+        width: 220px;
+        background: #f5f8fa;
+        border: 1px solid #e6ecf0;
+        height: 34px;
+        padding: 0 30px 0 12px;
+        border-radius: 16px;
+        color: #667581;
+        font-size: 12px;
+        background: #f5f8fa url(${search}) no-repeat 190px center;
       }
     }
   }
