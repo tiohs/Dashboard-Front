@@ -1,29 +1,30 @@
 import React from 'react';
-import { FaPeopleCarry } from 'react-icons/fa';
+import { FaPeopleCarry, FaIgloo } from 'react-icons/fa';
 import { Container, Menu } from './style';
 
 function Sidebar() {
   return (
     <Container>
-      <div className="sidebar">
-        <div className="sidebar-brand">
-          <FaPeopleCarry size={30} />
-          <span>UNITUENDA</span>
-        </div>
-        <Menu>
-          <ul>
-            <li className="active">
-              <span>Dashboard</span>
-            </li>
-            <li>
-              <span>Inbox</span>
-            </li>
-            <li>
-              <span>Cliente</span>
-            </li>
-          </ul>
-        </Menu>
+      <div>
+        <FaPeopleCarry size={30} />
+        <span>UNITUENDA</span>
       </div>
+      <nav>
+        <ul>
+          <li>
+            <span>Dashboard</span>
+          </li>
+          <li>
+            <span>Inbox</span>
+          </li>
+          <li>
+            <span>Cliente</span>
+          </li>
+          <li>
+            <span>Funcionários</span>
+          </li>
+        </ul>
+      </nav>
     </Container>
   );
 }
