@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import {
   FaPeopleCarry,
@@ -52,20 +53,29 @@ function Sidebar() {
       <nav>
         <ul>
           <Item active={li1} onClick={() => handleClick('ds')}>
-            <FaIgloo size={24} />
-            <span>Dashboard</span>
+            <Link to="/">
+              <FaIgloo size={24} />
+              <span>Dashboard</span>
+            </Link>
           </Item>
+
           <Item active={li2} onClick={() => handleClick('in')}>
-            <FaInbox size={24} />
-            <span>Inbox</span>
+            <Link to="/inbox">
+              <FaInbox size={24} />
+              <span>Inbox</span>
+            </Link>
           </Item>
           <Item active={li3} onClick={() => handleClick('cl')}>
-            <FaUsers size={24} />
-            <span>Cliente</span>
+            <Link>
+              <FaUsers size={24} />
+              <span>Cliente</span>
+            </Link>
           </Item>
           <Item active={li4} onClick={() => handleClick('fu')}>
-            <FaUserTie size={24} />
-            <span>Funcionários</span>
+            <Link>
+              <FaUserTie size={24} />
+              <span>Funcionários</span>
+            </Link>
           </Item>
         </ul>
       </nav>

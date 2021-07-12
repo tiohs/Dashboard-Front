@@ -29,6 +29,7 @@ export const Container = styled.div`
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+
       li {
         width: 80%;
         margin-bottom: 1.3rem;
@@ -36,9 +37,14 @@ export const Container = styled.div`
         display: flex;
         align-items: center;
         font-size: 18px;
-        color: #fff;
-        span {
-          margin-left: 5px;
+        a {
+          color: #fff;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          span {
+            margin-left: 5px;
+          }
         }
       }
     }
@@ -51,6 +57,11 @@ export const Item = styled.li`
     `background: #fff;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color: #2570ff !important;
-    border-radius: 30px 0px 0px 30px;`}
+    
+    border-radius: 30px 0px 0px 30px;
+    a {
+          color: #2570ff !important;
+          text-decoration: none;
+    }
+  `}
 `;
