@@ -1,5 +1,14 @@
+import React from 'react';
+
+import { Conteiner } from './style';
 function Home() {
-  return <h1>ok</h1>;
+  return (
+    <Conteiner>
+      <main>
+        <h1>Hello Word </h1>
+      </main>
+    </Conteiner>
+  );
 }
 
 export default Home;
