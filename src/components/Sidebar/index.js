@@ -5,12 +5,24 @@ import { Container, Menu } from './style';
 function Sidebar() {
   return (
     <Container>
-      <div>
+      <div className="sidebar">
         <div className="sidebar-brand">
           <FaPeopleCarry size={30} />
           <span>UNITUENDA</span>
         </div>
-        <Menu></Menu>
+        <Menu>
+          <ul>
+            <li className="active">
+              <span>Dashboard</span>
+            </li>
+            <li>
+              <span>Inbox</span>
+            </li>
+            <li>
+              <span>Cliente</span>
+            </li>
+          </ul>
+        </Menu>
       </div>
     </Container>
   );

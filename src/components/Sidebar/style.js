@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  div {
+  .sidebar {
     width: 345px;
     position: fixed;
     left: 0;
@@ -27,4 +27,32 @@ export const Container = styled.div`
   }
 `;
 
-export const Menu = styled.nav``;
+export const Menu = styled.nav`
+  ul {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    li {
+      width: 80%;
+      margin-bottom: 1.3rem;
+      padding-left: 2rem;
+      padding-left: 1rem;
+      display: block;
+      color: #fff;
+      font-size: 1.1rem;
+      span {
+        color: #fff;
+      }
+    }
+    li.active {
+      background: #fff;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-radius: 30px 0px 0px 30px;
+      span {
+        color: #2570ff;
+      }
+    }
+  }
+`;
