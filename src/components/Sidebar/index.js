@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaPeopleCarry, FaIgloo } from 'react-icons/fa';
-import { Container, Menu } from './style';
+import { Container, Item } from './style';
 
 function Sidebar() {
   return (
@@ -11,18 +11,19 @@ function Sidebar() {
       </div>
       <nav>
         <ul>
-          <li>
+          <Item active={true}>
+            <FaIgloo size={24} />
             <span>Dashboard</span>
-          </li>
-          <li>
+          </Item>
+          <Item>
             <span>Inbox</span>
-          </li>
-          <li>
-            <span>Cliente</span>
-          </li>
-          <li>
+          </Item>
+          <Item>
+            <span>Cente</span>
+          </Item>
+          <Item>
             <span>Funcionários</span>
-          </li>
+          </Item>
         </ul>
       </nav>
     </Container>

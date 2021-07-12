@@ -23,40 +23,34 @@ export const Container = styled.div`
       font-size: 24px;
     }
   }
-`;
-
-export const Menu = styled.nav`
-  ul {
+  nav {
     margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    li.active {
-      background: #fff;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      border-radius: 30px 0px 0px 30px;
-      ${props =>
-        props.className &&
-        css`
-          span {
-            color: #2570ff;
-          }
-        `}
-    }
-
-    li {
-      width: 80%;
-      margin-bottom: 1.3rem;
-      padding-left: 2rem;
-      padding-left: 1rem;
-      display: block;
-      color: #fff;
-      font-size: 1.1rem;
-      span {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      li {
+        width: 80%;
+        margin-bottom: 1.3rem;
+        padding-left: 2rem;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
         color: #fff;
+        span {
+          margin-left: 5px;
+        }
       }
     }
   }
+`;
+
+export const Item = styled.li`
+  ${props =>
+    props.active &&
+    `background: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #2570ff !important;
+    border-radius: 30px 0px 0px 30px;`}
 `;
