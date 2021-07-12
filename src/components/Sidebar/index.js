@@ -1,11 +1,17 @@
 import React from 'react';
-
-import { Container } from './style';
+import { FaPeopleCarry } from 'react-icons/fa';
+import { Container, Menu } from './style';
 
 function Sidebar() {
   return (
     <Container>
-      <div className="sidebar brand"></div>
+      <div>
+        <div className="sidebar-brand">
+          <FaPeopleCarry size={30} />
+          <span>UNITUENDA</span>
+        </div>
+        <Menu></Menu>
+      </div>
     </Container>
   );
 }
