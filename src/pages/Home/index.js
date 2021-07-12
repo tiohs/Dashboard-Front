@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { Conteiner } from './style';
+import { Main } from '../../components/styled/Main';
 function Home() {
   return (
-    <Conteiner>
-      <main>
-        <h1>Hello Word </h1>
-      </main>
-    </Conteiner>
+    <Main>
+      <section>
+        <h1></h1>
+      </section>
+    </Main>
   );
 }
 
