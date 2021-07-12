@@ -9,7 +9,7 @@ function Header() {
     <Container>
       <header>
         <div className="headerTitle">
-          <FaBars size="24" color="#2570ff" />
+          <FaBars size="24" />
           <h1>Dashboard</h1>
         </div>
         <div className="search">
@@ -17,8 +17,10 @@ function Header() {
         </div>
         <div className="avatar">
           <img src={avatar} alt="" />
-          <strong>Hamilton Silva</strong>
-          <span>admin</span>
+          <div className="info">
+            <strong>Hamilton Silva</strong>
+            <span>admin</span>
+          </div>
         </div>
       </header>
     </Container>

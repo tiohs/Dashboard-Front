@@ -37,5 +37,26 @@ export const Container = styled.div`
         background: #f5f8fa url(${search}) no-repeat 190px center;
       }
     }
+    .avatar {
+      display: flex;
+      align-items: center;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .info {
+        margin-left: 5px;
+        strong {
+          font-size: 14px;
+          display: block;
+        }
+        span {
+          font-size: 12px;
+          font-weight: normal;
+          display: block;
+        }
+      }
+    }
   }
 `;
